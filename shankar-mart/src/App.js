@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import ProductListing from './pages/ProductListing';
 import CartPage from './pages/CartPage';
 import CheckoutPage from './pages/CheckoutPage';
+import './App.css'
 
 function App() {
   const [cart, setCart] = useState([]);
@@ -47,9 +48,12 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <nav>
-          <Link to="/">Products</Link>
-          <Link to="/cart">Cart ({cart.length})</Link>
+        <nav id='navBar'>
+          <div>Shankar Mart</div>
+          <div id='navBar-CartArea'>            
+          <Link to="/" className='navBar-CartArea-w'>Products</Link>
+          <Link to="/cart" className='navBar-CartArea-w'>&#128722; ({cart.length})</Link>
+          </div>
         </nav>
 
         <Routes>
