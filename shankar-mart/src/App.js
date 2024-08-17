@@ -21,6 +21,7 @@ function App() {
         return [...prevCart, { ...product, quantity: 1 }];
       }
     });
+  alert(`${product.title} added to cart!`);
   };
 
   const updateQuantity = (productId, quantity) => {
