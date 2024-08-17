@@ -1,3 +1,5 @@
+# **Shankar Mart**
+
 # **E-Commerce Shopping Cart Application**
 
 ## **Overview**
@@ -95,4 +97,3 @@ src/
 - Implement user authentication and profile management.
 - Save cart items in local storage.
 - Add a real payment gateway for order processing.
-
